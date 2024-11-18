@@ -30,6 +30,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout repository  # Ensures the YAML files are available
+      uses: actions/checkout@v2
+
     - name: Set up kubectl
       uses: azure/setup-kubectl@v1
 
